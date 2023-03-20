@@ -11,8 +11,10 @@ complex::complex (double _real, double _img) : real(_real) , img(_img)
 {
     magnitude = hypot(_real, _img);   //hypot(): returns the square root of sum of square of arguments passed.
     if(_real == 0)
+    {
         angle = 0;
         return;
+    }
     angle = atan( (_img/_real) );         //atan(): Returns Inverse tangent a Number
 }
 
